@@ -1,0 +1,34 @@
+.footer {
+  width: 100%;
+  background: var(--medium-blue);
+  color: var(--white);
+  padding: 1rem 2rem;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer a {
+  color: var(--light-gray);
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem;
+  }
+}

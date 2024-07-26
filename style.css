@@ -1,0 +1,31 @@
+@import url(./styles/header.css);
+@import url(./styles/main.css);
+@import url(./styles/footer.css);
+
+:root {
+  --white: #FFFFFF;
+  --light-blue: #E0F7FA;
+  --medium-blue: #29B6F6;
+  --dark-blue: #0277BD;
+  --light-gray: #F5F5F5;
+  --medium-gray: #9E9E9E;
+  --dark-gray: #5F5F5F;
+  --soft-yellow: #FFE30B;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body{
+  overflow: hidden;
+}
