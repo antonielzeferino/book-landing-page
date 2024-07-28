@@ -4,14 +4,15 @@
 
 :root {
   --white: #FFFFFF;
-  --ciano: #00BCD4; /* Ciano */
-  --turquesa-claro: #B2EBF2; /* Azul turquesa claro */
-  --turquesa-escuro: #00796B; /* Azul turquesa escuro */
-  --verde-agua: #4DB6AC; /* Verde água */
-  --light-gray: #F0F4F8; /* Cinza claro */
-  --medium-gray: #90A4AE; /* Cinza médio */
-  --dark-gray: #455A64; /* Cinza escuro */
-  --soft-yellow: #FFC107; /* Amarelo suave */
+  --black: #000;
+  --ciano: #00BCD4; 
+  --turquesa-claro: #B2EBF2; 
+  --turquesa-escuro: #00796B;
+  --verde-agua: #4DB6AC;
+  --light-gray: #F0F4F8; 
+  --medium-gray: #90A4AE;
+  --dark-gray: #455A64;
+  --soft-yellow: #FFC107; 
 }
 
 
