@@ -4,14 +4,16 @@
 
 :root {
   --white: #FFFFFF;
-  --light-blue: #B3E5FC; /* Azul claro mais harmonioso */
-  --medium-blue: #0288D1; /* Azul médio que complementa o azul forte */
-  --dark-blue: #01579B; /* Azul escuro mais intenso */
-  --light-gray: #F0F4F8; /* Cinza claro mais suave */
-  --medium-gray: #90A4AE; /* Cinza médio que contrasta melhor */
-  --dark-gray: #455A64; /* Cinza escuro que combina com tons mais fortes */
-  --soft-yellow: #FFC107; /* Amarelo suave mais vibrante */
+  --ciano: #00BCD4; /* Ciano */
+  --turquesa-claro: #B2EBF2; /* Azul turquesa claro */
+  --turquesa-escuro: #00796B; /* Azul turquesa escuro */
+  --verde-agua: #4DB6AC; /* Verde água */
+  --light-gray: #F0F4F8; /* Cinza claro */
+  --medium-gray: #90A4AE; /* Cinza médio */
+  --dark-gray: #455A64; /* Cinza escuro */
+  --soft-yellow: #FFC107; /* Amarelo suave */
 }
+
 
 *{
   margin: 0;

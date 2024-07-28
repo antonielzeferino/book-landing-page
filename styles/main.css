@@ -1,4 +1,4 @@
-main{
+main {
   width: 100%;
   height: auto;
   display: grid;
@@ -11,19 +11,20 @@ main{
   ;
 }
 
-main section{
+main section {
   padding: 1rem 2rem;
-  & ul{
-    list-style: none;
-  }
 }
 
-.about{
+main section ul {
+  list-style: none;
+}
+
+.about {
   grid-area: about;
   background-color: var(--light-gray);
 }
 
-.author{
+.author {
   grid-area: author;
   background-color: var(--light-gray);
 }
@@ -59,76 +60,87 @@ main section{
   font-weight: bold;
 }
 
-
-.benefits{
+.benefits {
   grid-area: benefits;
   background-color: var(--light-gray);
 }
 
-.benefits ul{
+.benefits ul {
   padding-top: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.highlights{
+.highlights {
   grid-area: highlights;
   background-color: var(--medium-gray);
   color: var(--white);
 }
 
-.highlights ul{
+.highlights ul {
   padding-top: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.purchase{
+.purchase {
   grid-area: purchase;
   background-color: var(--dark-gray);
   color: var(--white);
 }
 
-.purchase a{
-  color: var(--medium-blue);
+.cta-button {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 10px 20px;
+  background-color: var(--soft-yellow);
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: color, background 1s ease;
 }
 
-.contact{
+.cta-button:hover {
+  color: var(--white);
+  background-color: var(--ciano);
+}
+
+.contact {
   grid-area: contact;
   background-color: var(--dark-gray);
   color: var(--white);
 }
 
-.contact a{
-  color: var(--medium-blue);
+.contact a {
+  color: var(--ciano);
 }
 
-.sample{
+.sample {
   grid-area: sample;
   background-color: var(--light-gray);
 }
 
 @media (width < 768px) {
-  main{
+  main {
     grid-template-areas: 
-    "about"
-    "author"
-    "benefits"
-    "testimonials"
-    "highlights"
-    "sample"
-    "purchase"
-    "contact"
-    ;
+      "about"
+      "author"
+      "benefits"
+      "testimonials"
+      "highlights"
+      "sample"
+      "purchase"
+      "contact";
   }
 
-  main section{
+  main section {
     padding: 1rem;
   }
 
-  .testimonials{
+  .testimonials {
     padding: 10px;
   }
 }
