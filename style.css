@@ -4,13 +4,13 @@
 
 :root {
   --white: #FFFFFF;
-  --light-blue: #E0F7FA;
-  --medium-blue: #29B6F6;
-  --dark-blue: #0277BD;
-  --light-gray: #F5F5F5;
-  --medium-gray: #9E9E9E;
-  --dark-gray: #5F5F5F;
-  --soft-yellow: #FFE30B;
+  --light-blue: #B3E5FC; /* Azul claro mais harmonioso */
+  --medium-blue: #0288D1; /* Azul médio que complementa o azul forte */
+  --dark-blue: #01579B; /* Azul escuro mais intenso */
+  --light-gray: #F0F4F8; /* Cinza claro mais suave */
+  --medium-gray: #90A4AE; /* Cinza médio que contrasta melhor */
+  --dark-gray: #455A64; /* Cinza escuro que combina com tons mais fortes */
+  --soft-yellow: #FFC107; /* Amarelo suave mais vibrante */
 }
 
 *{
@@ -18,7 +18,6 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style-type: none;
 }
 
 html{
@@ -27,5 +26,6 @@ html{
 }
 
 body{
-  overflow: hidden;
+  max-width: 100vw;
+  overflow-x: hidden;
 }

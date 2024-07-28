@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
-  background: var(--medium-blue);
-  color: var(--white);
+  background: var(--medium-gray);
+  color: #000;
   padding: 1rem 2rem;
   text-align: center;
   position: relative;
@@ -15,7 +15,7 @@
 }
 
 .footer a {
-  color: var(--light-gray);
+  color: #000;
   text-decoration: none;
   font-weight: bold;
   margin-top: 1rem;
@@ -24,7 +24,7 @@
 }
 
 .footer a:hover {
-  color: var(--white);
+  color: var(--medium-blue);
 }
 
 @media (max-width: 768px) {
