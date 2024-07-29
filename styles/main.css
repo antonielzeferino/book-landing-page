@@ -84,6 +84,7 @@ main section ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  list-style-type: disc;
 }
 
 .highlights {
@@ -97,6 +98,7 @@ main section ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  list-style-type: square;
 }
 
 .purchase {
@@ -156,5 +158,17 @@ main section ul {
 
   .testimonials {
     padding: 10px;
+  }
+
+  .author{
+    text-align: center;
+  }
+
+  .benefits ul{
+    list-style: none;
+  }
+
+  .highlights ul{
+    list-style: none;
   }
 }
