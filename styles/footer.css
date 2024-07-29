@@ -5,6 +5,11 @@
   padding: 1rem 2rem;
   text-align: center;
   position: relative;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   bottom: 0;
   left: 0;
 }
@@ -18,13 +23,12 @@
   color: var(--black);
   text-decoration: none;
   font-weight: bold;
-  margin-top: 1rem;
   display: inline-block;
   transition: color 0.3s;
 }
 
 .footer a:hover {
-  color: var(--medium-blue);
+  color: var(--ciano);
 }
 
 @media (max-width: 768px) {

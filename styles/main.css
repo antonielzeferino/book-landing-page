@@ -5,7 +5,7 @@ main {
   grid-template-areas:
     "about about"
     "author benefits"
-    "testimonials highlights"
+    "video highlights"
     "sample sample"
     "contact purchase"
   ;
@@ -43,35 +43,13 @@ main section ul {
   border-radius: 50%;
 }
 
-.testimonials {
-  grid-area: testimonials;
+.video {
+  grid-area: video;
   background-color: var(--medium-gray);
-  color: var(--white);
-  padding: 1rem 2rem;
 }
 
-.testimonials h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.testimonials blockquote {
-  background-color: var(--dark-gray);
-  border-left: 4px solid var(--soft-yellow);
-  padding: 1rem;
-  margin: 1rem 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.testimonials p {
-  margin: 0;
-  font-style: italic;
-}
-
-.testimonials footer {
-  text-align: right;
-  margin-top: 0.5rem;
-  font-weight: bold;
+.video video{
+  max-width: 100%;
 }
 
 .benefits {
@@ -145,7 +123,7 @@ main section ul {
       "about"
       "author"
       "benefits"
-      "testimonials"
+      "video"
       "highlights"
       "sample"
       "purchase"
@@ -156,7 +134,7 @@ main section ul {
     padding: 1rem;
   }
 
-  .testimonials {
+  .video {
     padding: 10px;
   }
 
@@ -170,5 +148,11 @@ main section ul {
 
   .highlights ul{
     list-style: none;
+  }
+}
+
+@media (width >= 1600px) {
+  main{
+    font-size: 30px;
   }
 }
