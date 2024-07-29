@@ -5,7 +5,7 @@ main {
   grid-template-areas:
     "about about"
     "author benefits"
-    "highlights testimonials"
+    "testimonials highlights"
     "sample sample"
     "contact purchase"
   ;
