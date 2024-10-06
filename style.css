@@ -1,38 +1,250 @@
-@import url(./styles/header.css);
-@import url(./styles/main.css);
-@import url(./styles/footer.css);
-
 :root {
-  --white: #FFFFFF;
-  --black: #000;
-  --ciano: #00BCD4; 
-  --turquesa-claro: #B2EBF2; 
-  --turquesa-escuro: #00796B;
-  --verde-agua: #4DB6AC;
-  --light-gray: #F0F4F8; 
-  --medium-gray: #90A4AE;
-  --dark-gray: #455A64;
-  --soft-yellow: #FFC107;
+  --white: #ffffff;
+  --light-gray: #f5f5f5;
+  --medium-gray: #9e9e9e;
+  --dark-gray: #383737a5;
+  --primary-color: #0077ff;
+  --secondary-color: #00c8ff;
+  --highlight-yellow: #FFC107;
+  --active-color: #f8e859;
+  --hover-turquoise: #009688; 
+  --background-gradient: linear-gradient(to right, #0077ff, #00c8ff);
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
 }
 
-html{
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.6;
+  background-image: url('./assets/background-image.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-
-body{
   max-width: 100vw;
   overflow-x: hidden;
 }
 
-p{
-  text-indent: 10px;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--background-gradient);
+  padding: 4% 5%;
+  color: var(--white);
+  width: 100vw;
+  gap: 20px;
+}
+
+header .text-content {
+  max-width: 600px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+header p {
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+header .cta-button {
+  background-color: var(--highlight-yellow);
+  padding: 10px 20px;
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+header .cta-button:hover {
+  background-color: var(--active-color);
+}
+
+.book-cover {
+  width: 100%;
+  max-width: 300px;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 5% 10%;
+}
+
+section h2 {
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 28px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section h3 {
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  color: var(--light-gray);
+  margin: 20px 0;
+}
+
+section p,
+section ul {
+  font-size: 1.2rem;
+  color: var(--medium-gray);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section ul li {
+  padding: 10px;
+}
+
+section a {
+  color: var(--primary-color); 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline; 
+}
+
+.purchase ul {
+  font-weight: bold;
+  text-align: center;
+}
+
+.video video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: var(--dark-gray);
+  color: var(--white);
+  text-align: center;
+  padding: 20px;
+}
+
+.footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.contact {
+  text-align: center;
+  padding: 4% 5%;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.contact h2 {
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  color: var(--medium-gray);
+  margin-bottom: 10px;
+}
+
+.contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact ul li {
+  margin: 10px 0;
+}
+
+.contact a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* Media queries para telas maiores */
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3% 5%;
+    gap: 50px;
+  }
+
+  header .text-content {
+    text-align: left;
+    max-width: 50%;
+  }
+
+  section {
+    padding: 4% 2rem;
+  }
+
+  section h2 {
+    font-size: 32px;
+  }
+
+  section h3 {
+    font-size: 24px;
+  }
+
+  section p,
+  section ul {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .purchase p,
+  .contact p,
+  .contact ul{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .purchase ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer {
+    padding: 30px;
+  }
 }
